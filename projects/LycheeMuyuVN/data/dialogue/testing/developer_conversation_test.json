@@ -1,0 +1,134 @@
+{
+  "id": "developer_conversation_test",
+  "title": "Developer Conversation System Test",
+  "description": "Tests dialogue, typewriter animation, choices, character images, and pause/resume behavior.",
+  "characters": [
+    {
+      "id": "muyu",
+      "name": "木鱼",
+      "image": "res://assets/testing/conversation/developer_01.jpg",
+      "slot": "left"
+    },
+    {
+      "id": "lizhi",
+      "name": "荔枝",
+      "image": "res://assets/testing/conversation/developer_02.jpg",
+      "slot": "right"
+    }
+  ],
+  "entries": [
+    {
+      "id": "intro_01",
+      "speaker": "木鱼",
+      "speaker_id": "muyu",
+      "text": "woc能跑了！终于把 ConversationPanel 跑起来了。",
+      "choices": []
+    },
+    {
+      "id": "intro_02",
+      "speaker": "荔枝",
+      "speaker_id": "lizhi",
+      "text": "哥们儿，你看这俩图片位置对吗？而且背景都没扣。",
+      "choices": []
+    },
+    {
+      "id": "test_01",
+      "speaker": "木鱼",
+      "speaker_id": "muyu",
+      "text": "先别急着改图片。我们先把对话系统测试完整。",
+      "choices": []
+    },
+    {
+      "id": "test_02",
+      "speaker": "荔枝",
+      "speaker_id": "lizhi",
+      "text": "行，那你打算测试什么？",
+      "choices": [
+        {
+          "id": "test_typewriter",
+          "text": "测试打字机效果：逐字显示和点击跳过。"
+        },
+        {
+          "id": "test_choices",
+          "text": "测试选项：看看动态生成的按钮是否正常。"
+        },
+        {
+          "id": "test_everything",
+          "text": "全部测试一遍！"
+        }
+      ]
+    },
+    {
+      "id": "test_03",
+      "speaker": "木鱼",
+      "speaker_id": "muyu",
+      "text": "很好。现在测试一段比较长的文本。对话系统需要正确处理较长的句子、自动换行，以及逐字显示时的布局变化。我们还要确保文本不会因为切换说话者而继续显示上一句的内容。",
+      "choices": []
+    },
+    {
+      "id": "test_04",
+      "speaker": "荔枝",
+      "speaker_id": "lizhi",
+      "text": "再测试一下标点符号！中文，English, numbers 12345, and symbols: ! ? ...",
+      "choices": []
+    },
+    {
+      "id": "test_05",
+      "speaker": "木鱼",
+      "speaker_id": "muyu",
+      "text": "现在连续点击 Continue，确认每次都能正确显示下一句话。快速点击时，也不应该出现旧的打字机动画覆盖新文本的问题。",
+      "choices": []
+    },
+    {
+      "id": "pause_test_01",
+      "speaker": "荔枝",
+      "speaker_id": "lizhi",
+      "text": "接下来测试暂停功能。未来玩家可以打开书本或手机界面，而不会结束当前对话。",
+      "choices": []
+    },
+    {
+      "id": "pause_test_02",
+      "speaker": "木鱼",
+      "speaker_id": "muyu",
+      "text": "如果你在这句话显示到一半时打开书本，文本应该停在当前字符。关闭书本后，对话才能继续显示。",
+      "choices": []
+    },
+    {
+      "id": "test_06",
+      "speaker": "荔枝",
+      "speaker_id": "lizhi",
+      "text": "接下来，测试结束语。你完成这些测试之后，就可以开始把这个面板用于游戏里的正式剧情了。",
+      "choices": []
+    },
+    {
+      "id": "test_07",
+      "speaker": "木鱼",
+      "speaker_id": "muyu",
+      "text": "等等！我们还得测试一下玩家点击选项之后的反馈。",
+      "choices": [
+        {
+          "id": "finish_continue",
+          "text": "继续测试。"
+        },
+        {
+          "id": "finish_early",
+          "text": "结束本次测试。"
+        }
+      ]
+    },
+    {
+      "id": "test_08",
+      "speaker": "荔枝",
+      "speaker_id": "lizhi",
+      "text": "如果你能看到这句话，说明选择按钮触发后，对话也能继续向后推进。当前版本记录选择结果，但还没有根据选择跳转到不同剧情分支。",
+      "choices": []
+    },
+    {
+      "id": "finish",
+      "speaker": "木鱼",
+      "speaker_id": "muyu",
+      "text": "测试结束！下一步可以实现真正的分支剧情、角色立绘切换，以及与书本和手机 UI 的集成。",
+      "choices": []
+    }
+  ]
+}

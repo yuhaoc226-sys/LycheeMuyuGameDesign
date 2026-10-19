@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://b0kqcp84np5qe"]
+
+[node name="ConversationScene" type="Control" unique_id=1861263610]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1269151926]
+layout_mode = 0
+offset_right = 360.0
+offset_bottom = 200.0

@@ -1,0 +1,103 @@
+[gd_scene format=3 uid="uid://df7t6phslckml"]
+
+[ext_resource type="Texture2D" uid="uid://o7wr3n0ng76a" path="res://assets/ui/book/character_profiles/character_profile_frame.png" id="1_et4u1"]
+[ext_resource type="Script" uid="uid://kllmeh2248ty" path="res://scenes/ui/book_ui.tscn.gd" id="1_kn00h"]
+
+[node name="BookUI" type="Control" unique_id=986742293]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+script = ExtResource("1_kn00h")
+
+[node name="Book" type="Control" parent="." unique_id=221031140]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1710.0
+offset_top = -985.0
+offset_right = -210.0
+offset_bottom = -95.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="MainCharacterProfiling" type="Control" parent="." unique_id=2112563063]
+custom_minimum_size = Vector2(1400, 850)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -750.0
+offset_top = -445.0
+offset_right = 750.0
+offset_bottom = 535.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CharacterProfileFrame" type="Sprite2D" parent="MainCharacterProfiling" unique_id=1866175874]
+position = Vector2(750, 490)
+scale = Vector2(0.695, 0.695)
+texture = ExtResource("1_et4u1")
+
+[node name="RghtPage" type="ColorRect" parent="MainCharacterProfiling" unique_id=1558040727]
+visible = false
+custom_minimum_size = Vector2(700, 850)
+layout_mode = 0
+offset_left = 785.0
+offset_top = 77.999985
+offset_right = 1485.0
+offset_bottom = 928.0
+scale = Vector2(0.87, 0.87)
+
+[node name="LeftPage" type="ColorRect" parent="MainCharacterProfiling" unique_id=410957016]
+visible = false
+custom_minimum_size = Vector2(700, 850)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.104
+anchor_top = 0.102000006
+anchor_right = 0.104
+anchor_bottom = 0.102000006
+offset_left = -156.0
+offset_top = -90.78001
+offset_right = 544.0
+offset_bottom = 759.22
+
+[node name="NavigationButtons" type="Control" parent="." unique_id=1889705625]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="FlipNext" type="TextureButton" parent="NavigationButtons" unique_id=558526621]
+layout_mode = 0
+offset_left = 1392.0
+offset_top = 832.0
+offset_right = 1517.0
+offset_bottom = 872.0
+
+[node name="FlipCharacter" type="TextureButton" parent="NavigationButtons" unique_id=932756316]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="FlipInventory" type="TextureButton" parent="NavigationButtons" unique_id=236143851]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="FlipFreenote" type="TextureButton" parent="NavigationButtons" unique_id=296447976]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="FlipAchievements" type="TextureButton" parent="NavigationButtons" unique_id=1023760598]
+layout_mode = 0
+offset_left = 1536.0
+offset_top = 408.0
+offset_right = 1661.0
+offset_bottom = 463.0
